@@ -1,0 +1,158 @@
+@font-face{
+    font-family: "myfont";
+    src: url(assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf) format("ttf"),url(assets/fonts/DMSans-VariableFont_opsz\,wght.ttf) format("ttf");
+    font-weight: normal;
+    font-style: normal;
+    
+}
+body{
+    background-color: hsl(254, 52%, 94%);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-flow: 180px;
+    gap: 25px;
+    padding: 50px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400, 500;
+   
+}
+
+.card{ border-radius: 10px }
+
+p{ font-size: 0.9rem; }
+
+/* Card1 styling */
+.card1{
+    grid-row: span 3;
+    grid-column: span 1;
+    justify-items: center;
+    align-items: center;
+    background-color: hsl(31, 66%, 93%);
+    font-size: 1.5rem;
+    padding: 50px;
+}
+.card1 span{
+    color: hsl(256, 67%, 59%);
+}
+.card1 img{
+    width: 150px; height: max-content;
+    
+}
+.white{color: white;}
+
+/* Card2 styling */
+.card2{
+    grid-row: span 3;
+    grid-column: span 4;
+    background-color: hsl(256, 67%, 59%);
+    align-items: center;
+    justify-items: center;
+    font-size: 2.5rem;
+
+}
+.card2 img{
+    width: 200px; height: min-content;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.card2 span{ color: hsl(39, 100%, 71%); }
+
+/* card3 styling */
+.card3{
+    grid-row: span 5;
+    grid-column: span 1;
+    background-color: hsl(254, 88%, 90%);
+    font-size: 1.5rem;
+    padding: 0 0 0 25px;
+}
+.card3 img{
+    width: 190px; height: 300px;
+}
+
+/* .card4 */
+.card4{
+    grid-row: span 3;
+    grid-column: span 1;
+    background-color: hsl(39, 100%, 71%);
+    padding: 10px 30px;
+    font-size: 1.5rem;
+}
+.card4 img{
+    width: 200px; height: 200px;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+/* card5 */
+.card5{
+    grid-row: span 2;
+    grid-column: span 2;
+    background-color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    padding: 50px 0 30px 30px;
+}
+.card5 img{
+    
+    width: 250px; height: 50px;
+    padding: 0 0 0 64px;
+}
+
+/* card6 */
+.card6{
+    grid-row: span 2;
+    grid-column: span 2;
+    background-color: hsl(39, 100%, 71%);
+    padding-left: 25px;
+    font-size: 1.5rem;
+}
+.card6 img{
+    width: 260px; height: 200px;
+
+}
+/* card7 */
+.card7{
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+    align-items: center;
+    justify-items: center;
+}
+.card7 img{
+    width: 150px; height: min-content;
+    padding-left: 100px;    
+}
+
+/* card8 */
+.card8{
+    grid-column: span 3;
+    grid-row: span 1;
+    background-color: hsl(256, 67%, 59%);
+    font-size: 2rem;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-items: center;
+    gap: 40px;
+    
+}
+.card8 img{
+    width: 200px; height: min-content;
+    padding-left: 40px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media (max-width: 768px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+    .card{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+}
